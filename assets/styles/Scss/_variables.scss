@@ -1,0 +1,39 @@
+// Variables
+$primary-color : #FF7B29;
+$secondary-color:#263FA4;
+$third-color : #132742;  // For newsletter and search btn
+$text-color : #2D3134;
+$background-color : #FAFAFA;
+$title-font-size : 2.5rem;
+$title-color : #2D3134;
+$card-radius : 16px;
+$nav-text-color :#6A6F77;
+$nav-text-color-active :#2D3134;
+
+
+
+// Mixins
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-position($justify-content , $align-items:'center') {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin toRem($property, $value) {
+    #{$property}: ($value / 16) + rem;
+}
+
+@mixin outline-0 {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+// Functions
+@function toRem($value) {
+    $remValue: ($value / 16) + rem; 
+    @return $remValue;
+}
