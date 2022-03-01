@@ -11,7 +11,8 @@
      
 }
 html , body {
-    min-width: 320px;
+    min-width: 320px !important;
+    overflow-x: hidden;
 }
 ul , li {
     list-style: none;
