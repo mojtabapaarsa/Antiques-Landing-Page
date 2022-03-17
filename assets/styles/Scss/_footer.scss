@@ -1,0 +1,28 @@
+#footer {
+    margin: 80px 0 20px ;
+
+    .footer-title{
+        color: #020000;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .footer-links {
+
+        .footer-link-item{
+            margin-bottom: 10px;
+            
+            .footer-link {
+                color: #676A6C;
+                font-size: .75rem;
+            }
+        }
+    }
+    .footer-intouch{
+        color: #676A6C;
+                font-size: .75rem;
+    }
+    .footer-email {
+        color: #31C3E0;
+        font-size: .80rem;
+    }
+}

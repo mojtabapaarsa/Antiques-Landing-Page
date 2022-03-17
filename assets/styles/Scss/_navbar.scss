@@ -76,7 +76,7 @@
 @media screen and (max-width:765px) {
     #nav {
         background-color: #eaeaea;
-       
+        position: sticky;
         .navbar-item a.active-link{
             color: $primary-color;
 

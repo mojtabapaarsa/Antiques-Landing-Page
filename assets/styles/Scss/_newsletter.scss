@@ -1,0 +1,126 @@
+#newsletter {
+    margin: 40px 0;
+    padding: 10px;
+    position: relative;
+   .newsletter {
+       background-color: $third-color;
+       padding: 70px;
+       border-radius: 20px;
+       position: relative;
+       color: #fff;
+
+       .newsletter-title{
+           font-size: 2.5rem;
+           font-family: Inter;
+           font-weight: 700;
+       }
+       .newsletter-form {
+        margin-top: 30px;
+        @include outline-0;
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 10px;
+        width: 80%;
+        input {
+            @include outline-0;
+            background-color: transparent;
+            border: none;
+
+            &::placeholder {
+                color: #B3B4B5;
+            }
+        }
+        button {
+            background-color: #F66F4D;
+            color: #fff;
+            border-radius: 9px;
+            @include outline-0;
+
+            &:hover , &:active {
+                background-color: $primary-color;
+            }
+        }
+       }
+       .newsletter-img {
+            position: absolute;
+        top: -240px;
+        right: 120px;
+          
+       
+
+        img {
+            
+        }
+       }
+   }
+}
+
+@media screen and (max-width : 900px) {
+    #newsletter {
+        .newsletter {
+            padding: 40px;
+
+            .newsletter-title{
+                font-size: 1.7rem;
+                
+            }
+            .newsletter-subtitle{
+                font-size: .8rem;
+            }
+
+            .newsletter-img{
+                right: 37px !important;
+            }
+
+            .newsletter-form {
+                width: 100%;
+            }
+
+        }
+
+    }
+}
+
+@media screen and (max-width : 768px) {
+    #newsletter {
+        text-align: center;
+         
+
+        .newsletter {
+            padding: 40px;
+            .newsletter-title{
+                font-size: 2.1rem;
+            }
+            .newsletter-subtitle{
+                font-size: 1rem;
+            }
+
+        }
+        .newsletter-form {
+            margin: 30px auto;
+        }
+    }
+    
+}
+
+@media screen and (max-width : 592px) {
+    #newsletter {
+        text-align: center;
+         
+
+        .newsletter {
+            padding: 30px;
+            .newsletter-title{
+                font-size: 1.8rem;
+            }
+            .newsletter-subtitle{
+                font-size: .8rem;
+            }
+
+        }
+        .newsletter-form {
+            margin: 30px auto;
+        }
+    }
+    
+}
